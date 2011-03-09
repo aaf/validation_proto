@@ -1,0 +1,9 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  blueberry: MyString
+  cherry: 1
+
+two:
+  blueberry: MyString
+  cherry: 1

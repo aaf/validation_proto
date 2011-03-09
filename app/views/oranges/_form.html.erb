@@ -1,0 +1,25 @@
+<%= form_for (@orange, :validate => true) do |f| %>
+  <% if @orange.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@orange.errors.count, "error") %> prohibited this orange from being saved:</h2>
+
+      <ul>
+      <% @orange.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :blueberry %><br />
+    <%= f.text_field :blueberry, :placeholder => ":presence => true" %>
+  </div>
+  <div class="field">
+    <%= f.label :cherry %><br />
+    <%= f.text_field :cherry,  :placeholder => ":numericality => true" %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
