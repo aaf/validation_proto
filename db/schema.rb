@@ -15,6 +15,9 @@ ActiveRecord::Schema.define(:version => 20110309045106) do
   create_table "oranges", :force => true do |t|
     t.string   "blueberry"
     t.integer  "cherry"
+    t.decimal  "latitude",   :precision => 7, :scale => 5
+    t.decimal  "longitude",  :precision => 8, :scale => 5
+    t.decimal  "elevation",  :precision => 5, :scale => 1
     t.datetime "created_at"
     t.datetime "updated_at"
   end

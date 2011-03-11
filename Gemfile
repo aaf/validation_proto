@@ -8,6 +8,13 @@ gem 'jquery-rails', '>= 0.2.6'
 gem 'pg'
 gem 'client_side_validations', '3.0.0.alpha.3'
 
+group :test do
+  gem 'cucumber-rails'
+  gem 'capybara'
+  gem 'database_cleaner'
+  gem 'launchy'
+end
+
 # Use unicorn as the web server
 # gem 'unicorn'
 

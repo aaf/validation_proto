@@ -1,4 +1,4 @@
-<%= form_for (@orange, :validate => true) do |f| %>
+<%= form_for(@orange, :validate => true) do |f| %>
   <% if @orange.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@orange.errors.count, "error") %> prohibited this orange from being saved:</h2>
@@ -18,6 +18,14 @@
   <div class="field">
     <%= f.label :cherry %><br />
     <%= f.text_field :cherry,  :placeholder => ":numericality => true" %>
+  </div>
+  <div class="field">
+    <%= f.label :latitude %><br />
+    <%= f.text_field :latitude,  :placeholder => "latitude include point of ','" %>
+  </div>
+  <div class="field">
+    <%= f.label :longitude %><br />
+    <%= f.text_field :longitude,  :placeholder => "longitude including point of ','" %>
   </div>
   <div class="actions">
     <%= f.submit %>

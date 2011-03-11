@@ -3,7 +3,11 @@
 one:
   blueberry: MyString
   cherry: 1
+  latitude: 90
+  longitude: 170
 
 two:
   blueberry: MyString
   cherry: 1
+  latitude: 89
+  longitude: 160
