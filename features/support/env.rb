@@ -23,7 +23,7 @@ require 'cucumber/rails/capybara_javascript_emulation' # Lets you click links wi
 
 Capybara.configure do |config|
   config.default_driver = :selenium
-#   config.run_server = false
+  config.run_server = true
   config.default_selector = :css
   config.default_wait_time = 30
 end
